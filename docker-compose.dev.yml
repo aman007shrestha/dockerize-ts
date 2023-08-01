@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  api: 
+    build:
+      context: .
+      target: development
+    # Sync with local
+    # Bind mount
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    # Traffic from host computer to container
+    # localhost:containerHost
+    ports:
+      - 4000:4000
+    command: npm run start:dev
