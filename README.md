@@ -1,4 +1,4 @@
-# dockerrize-ts
+# dockerize-ts
 Dockerizing a typescript application from scratch
 
 ## Development Script
